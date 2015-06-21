@@ -13,6 +13,7 @@
 		FF5EBDDC1B370E82007E5B33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5EBDDB1B370E82007E5B33 /* Images.xcassets */; };
 		FF5EBDDF1B370E82007E5B33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5EBDDD1B370E82007E5B33 /* LaunchScreen.xib */; };
 		FF5EBDEB1B370E83007E5B33 /* FoodieSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EBDEA1B370E83007E5B33 /* FoodieSearchTests.swift */; };
+		FF5EBDF61B372AA3007E5B33 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EBDF51B372AA3007E5B33 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		FF5EBDE41B370E82007E5B33 /* FoodieSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5EBDE91B370E83007E5B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5EBDEA1B370E83007E5B33 /* FoodieSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieSearchTests.swift; sourceTree = "<group>"; };
+		FF5EBDF51B372AA3007E5B33 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		FF5EBDD11B370E82007E5B33 /* FoodieSearch */ = {
 			isa = PBXGroup;
 			children = (
+				FF5EBDF41B372A01007E5B33 /* APIClient */,
 				FF5EBDD41B370E82007E5B33 /* AppDelegate.swift */,
 				FF5EBDD61B370E82007E5B33 /* ViewController.swift */,
 				FF5EBDD81B370E82007E5B33 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				FF5EBDE91B370E83007E5B33 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF5EBDF41B372A01007E5B33 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				FF5EBDF51B372AA3007E5B33 /* APIClient.swift */,
+			);
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 			files = (
 				FF5EBDD71B370E82007E5B33 /* ViewController.swift in Sources */,
 				FF5EBDD51B370E82007E5B33 /* AppDelegate.swift in Sources */,
+				FF5EBDF61B372AA3007E5B33 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +425,7 @@
 				FF5EBDF01B370E83007E5B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF5EBDF11B370E83007E5B33 /* Build configuration list for PBXNativeTarget "FoodieSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +434,7 @@
 				FF5EBDF31B370E83007E5B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
