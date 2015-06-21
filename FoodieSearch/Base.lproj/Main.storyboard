@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FoodieSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QBf-Wa-cGp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QBf-Wa-cGp" secondAttribute="trailing" id="5v9-Ma-GKh"/>
+                            <constraint firstItem="QBf-Wa-cGp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6tx-3c-aAg"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QBf-Wa-cGp" secondAttribute="bottom" id="K4j-b5-MBg"/>
+                            <constraint firstItem="QBf-Wa-cGp" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="gz8-kd-giE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="QBf-Wa-cGp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="K4j-b5-MBg"/>
+                                <exclude reference="5v9-Ma-GKh"/>
+                                <exclude reference="6tx-3c-aAg"/>
+                                <exclude reference="gz8-kd-giE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="QBf-Wa-cGp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="K4j-b5-MBg"/>
+                                <include reference="5v9-Ma-GKh"/>
+                                <include reference="6tx-3c-aAg"/>
+                                <include reference="gz8-kd-giE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="QBf-Wa-cGp" id="znR-Gk-tLU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
