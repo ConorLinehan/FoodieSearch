@@ -22,6 +22,10 @@ class ViewController: UIViewController, MKMapViewDelegate{
         // Do any additional setup after loading the view, typically from a nib.
         
         self.mapView.delegate = self
+        
+        let client = YelpClient()
+        
+        client.searchCoordinate(coordinate: self.mapView.centerCoordinate)
     }
 
     override func didReceiveMemoryWarning() {
